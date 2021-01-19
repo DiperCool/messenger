@@ -1,0 +1,45 @@
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.deps.json
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.dll
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/ref/Web.Infrastructure.dll
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.pdb
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.dll
+/home/diper/Документы/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.pdb
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csprojAssemblyReference.cache
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfoInputs.cache
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfo.cs
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CoreCompileInputs.cache
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CopyComplete
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.dll
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/ref/Web.Infrastructure.dll
+/home/diper/Документы/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.pdb
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.deps.json
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.dll
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/ref/Web.Infrastructure.dll
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.pdb
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.dll
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.pdb
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csprojAssemblyReference.cache
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfo.cs
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CopyComplete
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.dll
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/ref/Web.Infrastructure.dll
+C:/Users/вася/Desktop/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.pdb
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.deps.json
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.dll
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/ref/Web.Infrastructure.dll
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Infrastructure.pdb
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.dll
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/bin/Debug/net5.0/Web.Models.pdb
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csprojAssemblyReference.cache
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfoInputs.cache
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.AssemblyInfo.cs
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CoreCompileInputs.cache
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.csproj.CopyComplete
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.dll
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/ref/Web.Infrastructure.dll
+/home/diper/Рабочий стол/Messenger/Web.Infrastructure/obj/Debug/net5.0/Web.Infrastructure.pdb
