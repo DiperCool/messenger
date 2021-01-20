@@ -72,7 +72,6 @@ namespace Web.Infrastructure.ChatServices
         public async Task<Chat> GetChatWithAvaByGuid(string guid)
         {
             var chat= await _context.Chats
-                            .AsNoTracking()
                             .Include(x=>x.LastMessage)
                                 .ThenInclude(x=>x.Creator)
                                     .ThenInclude(x=>x.CurrentAva)

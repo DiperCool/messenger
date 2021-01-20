@@ -79,10 +79,6 @@ namespace Web.Api.Controllers.ChatPM
             if(user.isOnline){
                 chat.CountMembersOnline+=1;
             }
-            if(chat.LastMessage!=null)
-            {
-                chat.Messages.Add(chat.LastMessage);
-            }
             var chatDTO = _mapper.Map<Chat, ChatDTO>(chat);
             await SendNewChat(model, chatDTO);
             return Ok();

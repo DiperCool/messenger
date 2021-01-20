@@ -1,4 +1,4 @@
-import React,{ useCallback, useState} from 'react';
+import React,{ useCallback, useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -29,10 +29,17 @@ export const MenuComponent = ({children}) => {
     let [chat, setChat]=useState(null);
     const [anchorEl, setAnchorEl] = useState(null);
 
+    useEffect(()=>{
+        if(chat===null){
+            handleClose();
+        }
+    },[chat])
+
+
     let setChatMenu=useCallback((chat)=>{
         setChat(chat);
     },[]);
-
+    
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
     };
@@ -93,15 +100,15 @@ export const MenuComponent = ({children}) => {
                         }
                     </Grid>
             </AppBar>
-                <Menu
+                {chat===null?null:<Menu
                     id="simple-menu"
                     anchorEl={anchorEl}
                     keepMounted
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    {chat===null?null:MenusItems.map((El,i)=><El key={i} guid={chat.guid}/>)}
-                </Menu>
+                    {MenusItems.map((El,i)=><El key={i} guid={chat.guid} handleClose={handleClose}/>)}
+                </Menu>}
                 {children}
             </MenuContext.Provider>
         </React.Fragment>
