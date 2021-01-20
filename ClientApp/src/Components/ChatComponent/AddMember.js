@@ -6,7 +6,6 @@ export const AddMember=({guid})=>{
 
     const refInput=useRef(null);
     const addMemberHandler=()=>{
-        console.log(guid, refInput.current.value)
         sendReq("post", "api/chat/addMembers", {data:{
             login:refInput.current.value,
             guid:guid

@@ -34,7 +34,7 @@ namespace Web.Infrastructure.UserServices
 
         public async Task<User> GetUser(string login)
         {
-            return await _context.Users.AsNoTracking()
+            return await _context.Users
                         .Include(x=>x.CurrentAva)
                         .FirstOrDefaultAsync(x=>x.Login==login);
         }

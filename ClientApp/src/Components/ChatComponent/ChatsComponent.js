@@ -11,7 +11,7 @@ import { ChatView } from './ChatView';
 export const ChatsComponent = () => {
     let [chats, setChats]=useState([]);
     let [active,setActive]= useState(null);
-    let {setChatT}= useContext(MenuContext)
+    let {setChatMenu}= useContext(MenuContext)
     let {Auth}= useContext(UserContext);
     
 
@@ -40,7 +40,6 @@ export const ChatsComponent = () => {
                 newUser(guid, user);
             });
             Auth.con.on(guid+"-leaveMember", user=>{
-                console.log(guid, user);
                 leaveUser(guid, user);
             })
         })
@@ -60,13 +59,12 @@ export const ChatsComponent = () => {
     })
     const getChatIdByGuid=useCallback(guid=>chats.findIndex((el)=>el.guid===guid), [chats]);
     useEffect(()=>{
-        if(active===null){ 
-            setChatT({});
+        if(active===null){
+            setChatMenu(null);
             return;
         }
-        console.log(setChatT);
-        setChatT(Object.assign(chats[getChatIdByGuid(active)],{}));
-    },[chats])
+        setChatMenu(Object.assign({},chats[getChatIdByGuid(active)]));
+    },[chats, active, getChatIdByGuid, setChatMenu])
 
     const setNewMessage=useCallback((guid, message)=>{
         let chatId= getChatIdByGuid(guid)
@@ -81,9 +79,9 @@ export const ChatsComponent = () => {
 
     const onClickAChat=useCallback(guid=>{
         setActive(guid);
-        setChatT(chats[getChatIdByGuid(guid)])
+        setChatMenu(chats[getChatIdByGuid(guid)])
     
-    },[chats,getChatIdByGuid, setChatT]);
+    },[chats,getChatIdByGuid, setChatMenu]);
 
     const setNewMessages=useCallback((guid, messages)=>{
         let chatId= getChatIdByGuid(guid)

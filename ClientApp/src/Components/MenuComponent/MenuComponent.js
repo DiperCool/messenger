@@ -1,4 +1,4 @@
-import React,{ useState} from 'react';
+import React,{ useCallback, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -26,14 +26,12 @@ const useStyles = makeStyles((theme) => ({
 
 export const MenuComponent = ({children}) => {
     const classes = useStyles();
-    let [chat, setChat]=useState({});
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    console.log(chat.countMembers);
+    let [chat, setChat]=useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
 
-    let setChatT=(chat)=>{
-        console.log("new chat", "        ", chat)
+    let setChatMenu=useCallback((chat)=>{
         setChat(chat);
-    }
+    },[]);
 
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
@@ -47,8 +45,7 @@ export const MenuComponent = ({children}) => {
 
     return(
         <React.Fragment>
-            {chat.countMembers}
-            <MenuContext.Provider value={{setChatT,chat}}>
+            <MenuContext.Provider value={{setChatMenu,chat}}>
             <AppBar color="inherit" className={classes.AppBar} >
                     <Grid container>
                         <Grid item xs={4}>
@@ -59,12 +56,12 @@ export const MenuComponent = ({children}) => {
                                 </Typography>
                             </Toolbar>
                         </Grid>
-                        {Object.keys(chat).length===0?
+                        {chat===null?
                         null
                         :
                         <Grid item xs={8} container>
                             <Grid item xs={11}>
-                                <ListItem button  
+                                <ListItem button
                                     style={{height:"100%",color:"white", width:"100%",margin:"0", display:"inline-block" }} 
                                     disableRipple >
                                     <ListItemAvatar style={{display:"inline-block"}}>
@@ -100,11 +97,10 @@ export const MenuComponent = ({children}) => {
                     id="simple-menu"
                     anchorEl={anchorEl}
                     keepMounted
-                    onClick={handleClose}
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    {MenusItems.map((El,i)=><El key={i} guid={chat.guid}/>)}
+                    {chat===null?null:MenusItems.map((El,i)=><El key={i} guid={chat.guid}/>)}
                 </Menu>
                 {children}
             </MenuContext.Provider>
